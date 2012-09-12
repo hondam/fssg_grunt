@@ -1,0 +1,28 @@
+{
+  "name": "fssg_grunt",
+  "version": "0.0.1",
+  "description": "grunt test",
+  "main": "fssg.js",
+  "bin": {
+    "fssg_grunt": "runGrunt.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt-jasmine-task": "~0.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hondam/fssg_grunt.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "hondam <ogiuchi@gmail.com>",
+  "license": "MIT"
+}

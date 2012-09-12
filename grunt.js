@@ -7,12 +7,17 @@ module.exports = function(grunt) {
     },
     qunit: {
       all: ['test/index.html']
+    },
+    jasmine: {
+      all: ['specs/SpecRunner.html']
     }
   });
 
-  grunt.registerTask('notify', function(){
+  grunt.loadNpmTasks('grunt-jasmine-task');
+
+  grunt.registerTask('notify', function() {
     exec("growlnotify -t 'fssg_grunt' -m 'grunt build finish'");
   });
 
-  grunt.registerTask('default', 'lint qunit notify');
+  grunt.registerTask('default', 'lint jasmine notify');
 };
